@@ -1,0 +1,1088 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://cdn-uicons.flaticon.com/2.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css");
+@import url("https://cdn-uicons.flaticon.com/2.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css");
+@import url("https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-straight/css/uicons-regular-straight.css");
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300&display=swap");
+@import url("https://cdn-uicons.flaticon.com/2.0.0/uicons-solid-straight/css/uicons-solid-straight.css");
+@import url("https://cdn-uicons.flaticon.com/2.0.0/uicons-bold-straight/css/uicons-bold-straight.css");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* position: relative !important; */
+  background-color: #f3fafc;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+button[type="submit"] span {
+  font-size: 24px !important;
+}
+button[type="submit"]:hover {
+  background-color: #ced5d8 !important;
+}
+/* date-time*/
+.react-datepicker__navigation-icon::before {
+  height: 15px !important;
+  width: 15px !important;
+}
+.react-datepicker {
+  font-size: 1.2rem;
+  width: 100% !important;
+}
+.react-datepicker__month-container {
+  width: 100%;
+}
+.react-datepicker__navigation {
+  height: 60px !important;
+  width: 50px !important;
+}
+.react-datepicker__current-month {
+  font-size: 1.2rem !important;
+}
+.react-datepicker__header {
+  padding: 20px 0 10px 0;
+  background-color: transparent !important;
+  border-bottom: none !important;
+}
+.react-datepicker__current-month {
+  margin: 10px 0 !important;
+}
+.react-datepicker__day-names {
+  margin-bottom: -10px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  margin-left: 25px;
+  margin-right: 0.4rem;
+  font-size: 14px !important;
+}
+.react-datepicker__week {
+  white-space: nowrap;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  margin-left: 20px;
+  font-size: 14px;
+}
+.react-datepicker__day:disabled{
+  color: gray !important;
+}
+.react-datepicker__day-name, .react-datepicker__day, .react-datepicker__time-name {
+  color: #000;
+  display: inline-block;
+  width: 2.5rem !important;
+  line-height: 3.0 !important;
+  text-align: center;
+  margin: 0.166rem;
+}
+/* Navbar Stylings */
+
+.fa-brands:hover {
+  transform: scale(0.8);
+  color: #61b1d6;
+}
+.nav-header {
+  font-family: "Figtree", sans-serif !important;
+}
+nav {
+  background-color: #f3fafc !important;
+  padding: 0 80px !important;
+}
+nav ul li a {
+  padding: 10px 15px !important;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  color: #014584 !important;
+  font-size: 18px !important;
+  line-height: 28px !important;
+}
+nav ul li {
+  margin-left: 4px !important;
+}
+nav ul li a:hover {
+  color: #61b1d6 !important;
+  border-bottom: #61b1d6 1.5px solid;
+}
+
+.book {
+  background: #3a9dcc !important;
+  border-radius: 0 !important;
+  padding: 10px 14px !important;
+  text-decoration: none !important;
+  transition: all 0.3s ease-in-out;
+  outline: none !important;
+  color: white !important;
+  border: none !important;
+}
+.book:hover {
+  transform: scale(0.8);
+}
+.book span {
+  color: white;
+  font-size: 18px !important;
+  line-height: 28px !important;
+  padding: 2px !important;
+}
+
+/* Footer Stylings */
+[data-testid="flowbite-footer-brand"] img {
+  height: 250px !important;
+}
+[data-testid="footer-groupLink"] li a {
+  color: white !important;
+  font-weight: 400 !important;
+}
+.footer-text {
+  font-size: 12px !important;
+}
+footer li a:hover {
+  text-decoration: none !important;
+}
+footer li {
+  margin-right: 0px !important;
+}
+[data-testid="flowbite-footer-title"] {
+  text-transform: capitalize !important;
+  color: white !important;
+  font-weight: 700 !important;
+  font-size: 20px !important;
+}
+
+footer {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  color: white !important;
+  border-radius: 0 !important;
+  z-index: 40 !important;
+}
+
+[data-testid="flowbite-card"] {
+  border: none !important;
+  box-shadow: none !important;
+}
+[data-testid="flowbite-footer-brand"] a {
+  margin-top: 16px !important;
+}
+[data-testid="flowbite-footer-title"] {
+  text-transform: capitalize !important;
+  color: white !important;
+  font-weight: 600 !important;
+  font-size: 19px !important;
+}
+[data-testid="flowbite-footer-icon"] a svg {
+  color: white !important;
+  font-weight: 600 !important;
+  font-size: 20px !important;
+  margin-left: 15px !important;
+}
+
+footer {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  color: white !important;
+  border-radius: 0 !important;
+}
+
+[data-testid="flowbite-card"] {
+  border: none !important;
+  box-shadow: none !important;
+}
+[data-testid="flowbite-accordion-content"] {
+  padding: 0 !important;
+}
+
+[data-testid="flowbite-accordion-heading"] {
+  color: #11263c !important;
+}
+.fi-bs-check {
+  color: #00d100 !important;
+  font-size: medium !important;
+}
+.fi-br-cross-small {
+  color: red !important;
+  font-size: large !important;
+}
+
+/* Carousel Stylings */
+
+[data-testid="carousel-right-control"],
+[data-testid="carousel-left-control"] {
+  background: none !important;
+}
+[data-testid="carousel-right-control"] svg,
+[data-testid="carousel-left-control"] svg {
+  color: #3a9dcc !important;
+  height: 30px !important;
+  width: 30px !important;
+  stroke-width: 3 !important;
+}
+[data-testid="carousel-right-control"] span,
+[data-testid="carousel-left-control"] span {
+  background: none !important;
+  outline: none !important;
+}
+
+.book-page {
+  font-family: "Lato", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+}
+
+select {
+  padding: 16px !important;
+  border-radius: 6px !important;
+  padding-left: 20px !important;
+}
+
+#firstName,
+#lastName,
+#email,
+#secemail,
+#tel,
+#sectel,
+#address,
+#apt,
+#coupon {
+  /* width: 350px !important; */
+  padding: 15px !important;
+  border: 1px solid #bac0c4 !important;
+  border-radius: 4px !important;
+  padding-left: 40px !important;
+}
+input[type="password"] {
+  width: 350px !important;
+  padding: 15px !important;
+  border: 1px solid #bac0c4 !important;
+  border-radius: 4px !important;
+  padding-left: 40px !important;
+}
+
+label {
+  padding-left: 1.75rem !important;
+  padding-right: 1.75rem !important;
+}
+.form-group label {
+  padding-left: 0 !important;
+}
+
+#firstName,
+#lastName,
+#email,
+#secemail,
+#tel,
+#sectel,
+#address,
+#apt,
+#coupon {
+  /* width: 350px !important; */
+  padding: 15px !important;
+  border: 1px solid #bac0c4 !important;
+  border-radius: 4px !important;
+  padding-left: 40px !important;
+}
+#emailid,
+#passward {
+  width: 350px !important;
+  padding: 15px !important;
+  border: 1px solid #bac0c4 !important;
+  border-radius: 4px !important;
+  padding-left: 40px !important;
+}
+input::placeholder {
+  font-size: small !important;
+  color: #676f748b !important ;
+  font-weight: bold;
+}
+
+[aria-label="Pills"] button {
+  padding: 6px !important;
+  background: #3a9dcc !important;
+  color: white !important;
+}
+
+.fOFptH {
+  color: black !important;
+}
+
+.jQMQWL {
+  width: 100% !important;
+  height: auto !important;
+}
+
+/* Responsive */
+
+@media (max-width: 426px) {
+  .accordion__button {
+    background-color: transparent !important;
+    color: #014584 !important;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    font-size: 14px !important;
+  }
+  .accordion__panel {
+    font-size: 14px !important;
+  }
+  .popular {
+    background-color: transparent !important;
+    color: #014584 !important;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    font-size: 14px !important;
+  }
+  .popular::before {
+    display: inline-block;
+    content: "";
+    height: 8px;
+    width: 8px;
+    margin-right: 12px;
+    border-bottom: 2px solid currentColor;
+    border-right: 2px solid currentColor;
+    transform: rotate(-45deg);
+  }
+  .extras {
+    width: 150px !important;
+    height: 100px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  nav {
+    padding: 0 12px !important;
+  }
+  [data-testid="flowbite-accordion"] button {
+    padding: 4px !important;
+    background-color: white !important;
+    border-radius: 4px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  [data-testid="flowbite-accordion"] {
+    background-color: white !important;
+    border-radius: 4px !important;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  [data-testid="flowbite-footer-brand"] img {
+    height: 200px !important;
+    margin-left: -20px !important;
+  }
+  footer li a {
+    color: white;
+    font-weight: 400 !important;
+    font-size: 15px !important;
+  }
+  footer li a:hover {
+    text-decoration: none !important;
+  }
+  footer li {
+    margin-right: 10px !important;
+  }
+  [data-testid="flowbite-footer-brand"] a {
+    margin-top: 16px !important;
+  }
+  [data-testid="flowbite-footer-title"] {
+    text-transform: capitalize !important;
+    color: white !important;
+    font-weight: 600 !important;
+    font-size: 15px !important;
+  }
+  [data-testid="footer-groupLink"] li a {
+    color: white !important;
+    font-weight: 400 !important;
+    font-size: 12px !important;
+  }
+  [data-testid="flowbite-footer-icon"] a svg {
+    color: white !important;
+    font-weight: 600 !important;
+    font-size: 20px !important;
+    margin-left: 15px !important;
+  }
+
+  footer {
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    color: white !important;
+    border-radius: 0 !important;
+  }
+
+  [data-testid="flowbite-card"] {
+    border: none !important;
+    box-shadow: none !important;
+  }
+  [aria-label="Pills"] button {
+    padding: 5px !important;
+    background: #3a9dcc !important;
+    color: white !important;
+    font-size: 12px;
+    margin-left: 4px !important;
+  }
+  /* date-time*/
+.react-datepicker__navigation-icon::before {
+  height: 15px !important;
+  width: 15px !important;
+}
+.react-datepicker {
+  font-size: 1.2rem;
+  width: 100% !important;
+}
+.react-datepicker__month-container {
+  width: 100% !important;
+}
+.react-datepicker__navigation {
+  height: 60px !important;
+  width: 50px !important;
+}
+.react-datepicker__current-month {
+  font-size: 1.2rem !important;
+}
+.react-datepicker__header {
+  padding: 20px 0 10px 0;
+  background-color: transparent !important;
+  border-bottom: none !important;
+}
+.react-datepicker__current-month {
+  margin: 5px 0 !important;
+}
+.react-datepicker__day-names {
+  margin-bottom: -10px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  margin-left: 5px !important;
+  margin-right: 0.4rem;
+  font-size: 14px !important;
+}
+.react-datepicker__week {
+  white-space: nowrap;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  margin-left: 0px;
+  font-size: 14px;
+}
+.react-datepicker__day:disabled{
+  color: gray !important;
+}
+.react-datepicker__day-name, .react-datepicker__day, .react-datepicker__time-name {
+  color: #000;
+  display: inline-block;
+  width: 2.5rem !important;
+  line-height: 3.0 !important;
+  text-align: center;
+  margin: 0.166rem;
+}
+}
+@media (min-width: 426px) and (max-width: 1025px) {
+  .accordion__button {
+    background-color: transparent !important;
+    color: #014584 !important;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    font-size: 16px !important;
+  }
+  .accordion__panel {
+    font-size: 16px !important;
+  }
+  .popular {
+    background-color: transparent !important;
+    color: #014584 !important;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    font-size: 16px !important;
+  }
+  .popular::before {
+    display: inline-block;
+    content: "";
+    height: 8px;
+    width: 8px;
+    margin-right: 12px;
+    border-bottom: 2px solid currentColor;
+    border-right: 2px solid currentColor;
+    transform: rotate(-45deg);
+  }
+  [data-testid="flowbite-accordion"] button {
+    border: none !important;
+    background-color: white !important;
+    border-radius: 4px !important;
+    padding: 0px !important;
+    margin-bottom: 10px !important;
+  }
+  [aria-label="Pills"] button {
+    padding: 12px !important;
+    background: #3a9dcc !important;
+    color: white !important;
+  }
+  [data-testid="flowbite-footer-brand"] img {
+    height: 200px !important;
+    margin-left: -20px !important;
+  }
+  footer li a {
+    color: white;
+    font-weight: 400 !important;
+    font-size: 15px !important;
+  }
+  footer li a:hover {
+    text-decoration: none !important;
+  }
+  footer li {
+    margin-right: 10px !important;
+  }
+  [data-testid="flowbite-footer-brand"] a {
+    margin-top: 16px !important;
+  }
+  [data-testid="flowbite-footer-title"] {
+    text-transform: capitalize !important;
+    color: white !important;
+    font-weight: 600 !important;
+    font-size: 18px !important;
+  }
+  [data-testid="flowbite-footer-icon"] a svg {
+    color: white !important;
+    font-weight: 600 !important;
+    font-size: 20px !important;
+    margin-left: 15px !important;
+  }
+
+  footer {
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    color: white !important;
+    border-radius: 0 !important;
+  }
+
+  [data-testid="flowbite-card"] {
+    border: none !important;
+    box-shadow: none !important;
+  }
+  [data-testid="flowbite-footer-brand"] a {
+    margin-top: 16px !important;
+  }
+  [data-testid="flowbite-footer-title"] {
+    text-transform: capitalize !important;
+    color: white !important;
+    font-weight: 600 !important;
+    font-size: 18px !important;
+  }
+  [data-testid="flowbite-footer-icon"] a svg {
+    color: white !important;
+    font-weight: 600 !important;
+    font-size: 20px !important;
+    margin-left: 15px !important;
+  }
+
+  footer {
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    color: white !important;
+    border-radius: 0 !important;
+  }
+
+  [data-testid="flowbite-card"] {
+    border: none !important;
+    box-shadow: none !important;
+  }
+  .book {
+    background: #3a9dcc !important;
+    border-radius: 0 !important;
+    padding: 6px 15px !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease-in-out;
+    outline: none !important;
+    color: white !important;
+    border: none !important;
+  }
+  .book:hover {
+    transform: scale(0.8);
+  }
+  .book span {
+    color: white;
+    font-size: 18px !important;
+    line-height: 28px !important;
+    padding: 2px !important;
+  }
+  nav {
+    padding: 0 12px !important;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1441px) {
+  #firstName,
+  #lastName,
+  #email,
+  #secemail,
+  #tel,
+  #sectel,
+  #address,
+  #apt,
+  #coupon {
+    /* width: 350px !important; */
+    padding: 15px !important;
+    border: 1px solid #bac0c4 !important;
+    border-radius: 4px !important;
+    padding-left: 40px !important;
+  }
+  .extras {
+    --bs-btn-padding-x: 22px !important;
+    --bs-btn-padding-y: 16px !important;
+    width: 110px !important;
+    height: 100px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .accordion__button {
+    background-color: transparent !important;
+    color: #014584 !important;
+    cursor: pointer;
+    padding: 14px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    font-size: 20px !important;
+  }
+  .popular {
+    background-color: transparent !important;
+    color: #014584 !important;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    font-size: 16px !important;
+  }
+  .popular::before {
+    display: inline-block;
+    content: "";
+    height: 8px;
+    width: 8px;
+    margin-right: 12px;
+    border-bottom: 2px solid currentColor;
+    border-right: 2px solid currentColor;
+    transform: rotate(-45deg);
+  }
+  .accordion__panel {
+    font-size: 20px !important;
+  }
+}
+@media (min-width: 1024px) {
+  #firstName,
+  #lastName,
+  #email,
+  #secemail,
+  #tel,
+  #sectel,
+  #address,
+  #apt,
+  #coupon {
+    /* width: 350px !important; */
+    padding: 15px !important;
+    border: 1px solid #bac0c4 !important;
+    border-radius: 4px !important;
+    padding-left: 40px !important;
+  }
+
+  nav {
+    background-color: #f3fafc !important;
+    padding: 0 12px !important;
+  }
+  nav ul li a {
+    padding: 4px 8px !important;
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    color: #014584 !important;
+    font-size: 16px !important;
+    line-height: 28px !important;
+  }
+  nav ul li {
+    margin-left: 4px !important;
+  }
+  nav ul li a:hover {
+    color: #61b1d6 !important;
+    border-bottom: #61b1d6 1.5px solid;
+  }
+
+  .book {
+    background: #3a9dcc !important;
+    border-radius: 0 !important;
+    padding: 8px 10px !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease-in-out;
+    outline: none !important;
+    color: white !important;
+    border: none !important;
+    margin-left: 4px !important;
+  }
+  .book:hover {
+    transform: scale(0.8);
+  }
+  .book span {
+    color: white;
+    font-size: 18px !important;
+    line-height: 28px !important;
+    padding: 2px !important;
+  }
+  [data-testid="footer-groupLink"] li a {
+    color: white !important;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+  }
+  footer li a {
+    color: white;
+    font-weight: 400 !important;
+    font-size: 15px !important;
+  }
+  [data-testid="flowbite-accordion"] button {
+    padding: 6px !important;
+    background-color: white !important;
+    margin-bottom: 10px !important;
+  }
+}
+@media (min-width: 1025px) and (max-width: 2560px) {
+  [aria-label="Pills"] button {
+    padding: 12px !important;
+    background: #3a9dcc !important;
+    color: white !important;
+  }
+
+  .nav-header {
+    font-family: "Figtree", sans-serif !important;
+  }
+
+  [data-testid="footer-groupLink"] li a {
+    color: white !important;
+    font-weight: 400 !important;
+    font-size: 18px !important;
+  }
+}
+@media (min-width: 1440px) and (max-width: 2561px) {
+  .extras {
+    --bs-btn-padding-x: 22px !important;
+    --bs-btn-padding-y: 16px !important;
+    width: 130px !important;
+    height: 100px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .accordion__button {
+    background-color: transparent !important;
+    color: #014584 !important;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    font-size: 20px !important;
+  }
+  .popular {
+    background-color: transparent !important;
+    color: #014584 !important;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    font-size: 16px !important;
+  }
+  .popular::before {
+    display: inline-block;
+    content: "";
+    height: 10px;
+    width: 10px;
+    margin-right: 12px;
+    border-bottom: 2px solid currentColor;
+    border-right: 2px solid currentColor;
+    transform: rotate(-45deg);
+  }
+  nav {
+    background-color: #f3fafc !important;
+    padding: 0 80px !important;
+  }
+  nav ul li a {
+    padding: 10px 15px !important;
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    color: #014584 !important;
+    font-size: 18px !important;
+    line-height: 28px !important;
+  }
+  nav ul li {
+    margin-left: 4px !important;
+  }
+  nav ul li a:hover {
+    color: #61b1d6 !important;
+    border-bottom: #61b1d6 1.5px solid;
+  }
+
+  .book {
+    background: #3a9dcc !important;
+    border-radius: 0 !important;
+    padding: 10px 14px !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease-in-out;
+    outline: none !important;
+    color: white !important;
+    border: none !important;
+  }
+  .book:hover {
+    transform: scale(0.8);
+  }
+  .book span {
+    color: white;
+    font-size: 18px !important;
+    line-height: 28px !important;
+    padding: 2px !important;
+  }
+  #firstName::placeholder,
+  #lastName::placeholder,
+  #email::placeholder,
+  #secemail::placeholder,
+  #tel::placeholder,
+  #sectel::placeholder,
+  #address::placeholder,
+  #apt::placeholder,
+  #note::placeholder,
+  #special::placeholder,
+  #coupon::placeholder {
+    font-size: 16px !important;
+    color: #676f748b !important ;
+    font-weight: bold;
+  }
+}
+@media (min-width: 2560px) {
+  nav ul li a {
+    padding: 12px 15px !important;
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    color: #014584 !important;
+    font-size: 24px !important;
+    line-height: 28px !important;
+  }
+  nav ul li {
+    margin-left: 10px !important;
+  }
+  nav ul li a:hover {
+    color: #61b1d6 !important;
+    border-bottom: #61b1d6 1.5px solid;
+  }
+
+  .book {
+    background: #3a9dcc !important;
+    border-radius: 0 !important;
+    padding: 12px 16px !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease-in-out;
+    outline: none !important;
+    color: white !important;
+    border: none !important;
+    margin-left: 20px !important;
+  }
+  .book:hover {
+    transform: scale(0.8);
+  }
+  .book span {
+    color: white;
+    font-size: 24px !important;
+    line-height: 28px !important;
+    padding: 2px !important;
+  }
+
+  [aria-label="Pills"] button {
+    padding: 20px !important;
+    background: #3a9dcc !important;
+    color: white !important;
+  }
+  #emailid,
+  #passward {
+    width: 700px !important;
+    padding: 15px !important;
+    border: 1px solid #bac0c4 !important;
+    border-radius: 4px !important;
+    padding-left: 40px !important;
+  }
+  input::placeholder {
+    font-size: medium !important;
+    color: #676f748b !important ;
+    font-weight: 500 !important;
+  }
+  #firstName::placeholder,
+  #lastName::placeholder,
+  #email::placeholder,
+  #secemail::placeholder,
+  #tel::placeholder,
+  #sectel::placeholder,
+  #address::placeholder,
+  #apt::placeholder,
+  #note::placeholder,
+  #special::placeholder,
+  #coupon::placeholder {
+    font-size: 20px !important;
+    color: #676f748b !important ;
+    font-weight: bold;
+  }
+  footer li a {
+    color: white;
+    font-weight: 400 !important;
+    font-size: 24px !important;
+  }
+  [data-testid="footer-groupLink"] li a {
+    color: white !important;
+    font-weight: 400 !important;
+    font-size: 24px !important;
+  }
+  [data-testid="flowbite-footer-title"] {
+    text-transform: capitalize !important;
+    color: white !important;
+    font-weight: 600 !important;
+    font-size: 32px !important;
+  }
+  [data-testid="flowbite-footer-brand"] img {
+    height: 200px !important;
+    /* margin-left: -20px !important; */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #emailid,
+  #passward {
+    width: 350px !important;
+    padding: 15px !important;
+    border: 1px solid #bac0c4 !important;
+    border-radius: 4px !important;
+    padding-left: 40px !important;
+  }
+  input::placeholder {
+    font-size: medium !important;
+    color: #676f748b !important ;
+    font-weight: 500 !important;
+  }
+  nav {
+    background-color: #f3fafc !important;
+    padding: 0 10px !important;
+  }
+  nav ul li a {
+    padding: 4px 4px !important;
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    color: #014584 !important;
+    font-size: 16px !important;
+    line-height: 28px !important;
+  }
+  nav ul li a {
+    margin-left: 4px !important;
+  }
+  nav ul li a:hover {
+    color: #61b1d6 !important;
+    border-bottom: #61b1d6 1.5px solid;
+  }
+
+  .book {
+    background: #3a9dcc !important;
+    border-radius: 0 !important;
+    padding: 4px 4px !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease-in-out;
+    outline: none !important;
+    color: white !important;
+    border: none !important;
+    margin-left: 4px !important;
+  }
+  .book:hover {
+    transform: scale(0.8);
+  }
+  .book span {
+    color: white;
+    font-size: 12px !important;
+    line-height: 28px !important;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1440px) {
+  #emailid,
+  #passward {
+    width: 500px !important;
+    padding: 15px !important;
+    border: 1px solid #bac0c4 !important;
+    border-radius: 4px !important;
+    padding-left: 40px !important;
+  }
+  input::placeholder {
+    font-size: medium !important;
+    color: #676f748b !important ;
+    font-weight: 500 !important;
+  }
+}
+@media (min-width: 1441px) and (max-width: 2560px) {
+  #emailid,
+  #passward {
+    width: 500px !important;
+    padding: 15px !important;
+    border: 1px solid #bac0c4 !important;
+    border-radius: 4px !important;
+    padding-left: 40px !important;
+  }
+  input::placeholder {
+    font-weight: 500 !important;
+    font-size: small !important;
+    color: #676f748b !important ;
+  }
+
+  .fi-ss-angle-down,
+  .fi-ss-angle-right {
+    font-weight: bold;
+  }
+  .table {
+    --bs-table-color-type: initial;
+    --bs-table-bg-type: initial;
+    --bs-table-color-state: initial;
+    --bs-table-bg-state: initial;
+    --bs-table-color: var(--bs-emphasis-color);
+    --bs-table-bg: var(--bs-body-bg);
+    --bs-table-border-color: black !important;
+    --bs-table-accent-bg: transparent;
+    --bs-table-striped-color: black !important;
+    --bs-table-striped-bg: rgba(var(--bs-emphasis-color-rgb), 0.05);
+    --bs-table-active-color: var(--bs-emphasis-color);
+    --bs-table-active-bg: rgba(var(--bs-emphasis-color-rgb), 0.1);
+    --bs-table-hover-color: var(--bs-emphasis-color);
+    --bs-table-hover-bg: rgba(var(--bs-emphasis-color-rgb), 0.075);
+    width: 100%;
+    margin-bottom: 1rem;
+    vertical-align: top;
+    border-color: rgb(164, 161, 161) !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .extras {
+    --bs-btn-padding-x: 52px !important;
+    --bs-btn-padding-y: 16px !important;
+    width: 180px !important;
+    height: 100px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+}
+@media (min-width:320px) and (max-width:425px) {
+  .react-datepicker__day-name, .react-datepicker__day, .react-datepicker__time-name {
+    color: #000;
+    display: inline-block;
+    width: 1.5rem !important;
+    line-height: 3.0 !important;
+    text-align: center;
+    margin: 0.166rem;
+  }
+}
